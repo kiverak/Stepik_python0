@@ -1,17 +1,12 @@
-a, b, c = int(input()), int(input()), int(input())
+a = int(input())
+s = ""
+if a % 10 == 0 or a % 10 == 5 or a % 10 == 6 or a % 10 == 7 or a % 10 == 8 or a % 10 == 9:
+    s = "программистов"
+elif a % 100 == 11 or a % 100 == 12 or a % 100 == 13 or a % 100 == 14:
+    s = "программистов"
+elif a % 10 == 1:
+    s = "программист"
+elif a % 10 == 2 or a % 10 == 2 or a % 10 == 3 or a % 10 == 4:
+    s = "программиста"
 
-maximum = max(a, b, c)
-minimum = min(a, b, c)
-
-if (minimum == a and maximum == b) or (maximum == a and minimum == b):
-    mid = c
-elif (minimum == c and maximum == b) or (maximum == c and minimum == b):
-    mid = a
-elif (minimum == a and maximum == c) or (maximum == a and minimum == c):
-    mid = b
-else:
-    mid = minimum
-
-print(maximum)
-print(minimum)
-print(mid)
+print(a, s)
